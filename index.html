@@ -12,8 +12,8 @@
             text-align: center;
             font-family: monospace;
             font-size: 60px;
-			      font-weight: bold;
-			      margin-top: 50px;
+            font-weight: bold;
+            margin-top: 50px;
         }
 
         h2 {
@@ -23,11 +23,10 @@
         }
 
         h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 40px;
-        margin-left: 200px;
-        margin-right: 200px;
-        
+        margin-left: 20px;
+        margin-right: 20px;
         }
 
         h1, h2, h3 {
@@ -35,25 +34,52 @@
         }
 
       img {
-			width: 50px;
-			height: 50px;
-			transition: all 0.2s ease-in-out;
-		  }
+        width: 40px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+      }
 
-		  img:hover {
+      img:hover {
 			transform: scale(1.2);
 		  }
 
-         html {
+		  @media only screen and (min-width: 990px) {
+			main {
+				max-width: 70%;
+				margin: 0 auto;
+			  }
+
+        h1 {
+            font-size: 72px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-left: 20px;
+        }
+
+        h3 {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+		  }
+
+      html {
             background: #466368;
-  background: linear-gradient(to right bottom, #648880, #293f50);
-  background-repeat: no-repeat;
-  height: 111%;
+    background: linear-gradient(to right bottom, #648880, #293f50);
+    background-repeat: no-repeat;
+    height: 200%;
          }
          
         </style>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=no />
     <title>RinFiz Site</title>
   </head>
   <body>
