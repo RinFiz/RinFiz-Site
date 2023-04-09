@@ -1,8 +1,6 @@
 # RinFiz-Site
 A simple website made by me.
 
-I plan to make this website better in the future by adding different tabs at the top to navigate better.
+I plan to make this website better in the future by adding a navigation bar at the top and 
 
-I also plan to make more projects to add to this so you can find all of that in one place.
-
-http://rinfiz.hacked.us/ 
+all my projects and creations to it so everything can be found in one place.
