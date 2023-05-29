@@ -3,7 +3,7 @@ const dropdown = document.querySelector('.dropdown a');
 dropdown.addEventListener('click', (event) => {
   event.preventDefault();
 
-  const text = dropdown.innerText.trim();
+  const text = dropdown.querySelector('strong').innerText.trim();
 
   navigator.clipboard.writeText(text)
     .then(() => {
