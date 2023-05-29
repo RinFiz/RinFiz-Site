@@ -1,6 +1,7 @@
 const dropdown = document.querySelector('.wrapper .dropdown a');
 
 dropdown.addEventListener('click', (event) => {
+  console.log('Dropdown clicked'); // Add this line
   event.preventDefault();
 
   const text = dropdown.querySelector('strong').textContent.trim();
