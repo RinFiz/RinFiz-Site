@@ -5,22 +5,14 @@ dropdown.addEventListener('click', (event) => {
 
   const text = dropdown.querySelector('strong').textContent.trim();
 
-  const tempTextarea = document.createElement('textarea');
-  tempTextarea.value = text;
-  document.body.appendChild(tempTextarea);
+  const tempElement = document.createElement('textarea');
+  tempElement.value = text;
+  document.body.appendChild(tempElement);
 
-  tempTextarea.select();
+  tempElement.select();
+  document.execCommand('copy');
 
-  try {
-    const successful = document.execCommand('copy');
-    if (successful) {
-      alert(`"${text}" has been copied to the clipboard.`);
-    } else {
-      throw new Error('Copy command unsuccessful.');
-    }
-  } catch (error) {
-    console.error(`Unable to copy text: ${error}`);
-  }
+  document.body.removeChild(tempElement);
 
-  document.body.removeChild(tempTextarea);
+  alert(`"${text}" has been copied to the clipboard.`);
 });
