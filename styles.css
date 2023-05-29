@@ -37,10 +37,11 @@ h1, h2, h3 {
 }
 
 img {
+  display: block;
+  margin: auto;
   width: 72px;
   height: 72px;
   transition: all 0.2s ease-in-out;
-  vertical-align: middle; /* Add this line */
 }
 
 img:hover {
