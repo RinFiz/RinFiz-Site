@@ -3,13 +3,14 @@ const dropdown = document.querySelector('.dropdown a');
 dropdown.addEventListener('click', (event) => {
   event.preventDefault();
 
-  const text = dropdown.querySelector('strong').innerText.trim();
+  const text = dropdown.querySelector('strong').textContent.trim();
 
-  navigator.clipboard.writeText(text)
-    .then(() => {
-      alert(`"${text}" has been copied to the clipboard.`);
-    })
-    .catch((error) => {
-      console.error(`Unable to copy text: ${error}`);
-    });
+  const tempInput = document.createElement('input');
+  tempInput.setAttribute('value', text);
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+
+  alert(`"${text}" has been copied to the clipboard.`);
 });
