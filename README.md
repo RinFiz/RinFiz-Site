@@ -1,6 +1,4 @@
 # RinFiz-Site
-A simple website made by me.
+My personal homepage for all my info and socials
 
-I plan to make this website better in the future by adding a navigation bar at the top and 
-
-all my projects and creations to it so everything can be found in one place.
+Planning to add my portfolio project to this website.
