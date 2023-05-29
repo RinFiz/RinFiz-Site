@@ -5,12 +5,15 @@ dropdown.addEventListener('click', (event) => {
 
   const text = dropdown.querySelector('strong').textContent.trim();
 
-  const tempInput = document.createElement('input');
-  tempInput.setAttribute('value', text);
-  document.body.appendChild(tempInput);
-  tempInput.select();
+  const tempTextarea = document.createElement('textarea');
+  tempTextarea.value = text;
+  document.body.appendChild(tempTextarea);
+
+  tempTextarea.select();
+  tempTextarea.setSelectionRange(0, 99999);
+
   document.execCommand('copy');
-  document.body.removeChild(tempInput);
+  document.body.removeChild(tempTextarea);
 
   alert(`"${text}" has been copied to the clipboard.`);
 });
