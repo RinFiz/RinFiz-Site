@@ -1,4 +1,4 @@
-const dropdown = document.querySelector('.dropdown a');
+const dropdown = document.querySelector('.wrapper .dropdown a');
 
 dropdown.addEventListener('click', (event) => {
   event.preventDefault();
