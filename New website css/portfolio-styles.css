@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightskyblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.portfolio {
+     background: linear-gradient(to bottom right, lightskyblue, lightblue);
+    border: 4px solid black;
+    border-radius: 0 20px 0 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #e6f9ff, #c3e5fc);
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project svg {
+width: 24px;
+height: 24px;
+transition: transform 0.3s ease-in-out;
+}
+
+.project:hover svg {
+transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .portfolio {
+        max-width: 768px;
+        margin: 50px auto;
+    }
+}
+
+.nav-container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+header {
+  background: deepskyblue;
+  height: 70px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav-logo {
+  float: left;
+  padding: 0;
+}
+
+nav {
+  float: left;
+  margin-bottom: 32px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 1000;
+}
+
+nav a:hover {
+  color: #444;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 150ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
