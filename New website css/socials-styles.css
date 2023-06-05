@@ -93,6 +93,14 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+  margin: 0;
+  background: lightskyblue;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
 .nav-container {
   width: 80%;
   margin: 0 auto;
@@ -160,4 +168,29 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav {
+    margin-bottom: 32;
+    text-align: center;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  nav li {
+    margin: 0 10px;
+    display: inline-block;
+  }
 }
