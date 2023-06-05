@@ -64,19 +64,19 @@ html {
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 body {
-	margin: 0;
-	background: lightskyblue;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+  margin: 0;
+  background: lightskyblue;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
 }
 
 .nav-container {
-      width: 80%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 header {
   background: deepskyblue;
@@ -109,7 +109,6 @@ nav li {
   display: inline-block;
   margin-left: 40px;
   padding-top: 23px;
-
   position: relative;
 }
 
@@ -130,14 +129,37 @@ nav a::before {
   display: block;
   height: 5px;
   background-color: #444;
-
   position: absolute;
   top: 0;
   width: 0%;
-
   transition: all ease-in-out 150ms;
 }
 
 nav a:hover::before {
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav {
+    margin-bottom: 32;
+    text-align: center;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  nav li {
+    margin: 0 10px;
+    display: inline-block;
+  }
 }
