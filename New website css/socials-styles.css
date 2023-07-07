@@ -104,9 +104,9 @@ body {
 }
 
 .nav-container {
-  width: 80%;
+  width: 97.5%;
   margin: 0 auto;
-  display: flex;
+  display:inline-flex;
   justify-content: center;
   align-items: center;
 }
@@ -178,7 +178,7 @@ nav a:hover::before {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 107%;
+    width: 104%;
   }
   
   nav {
