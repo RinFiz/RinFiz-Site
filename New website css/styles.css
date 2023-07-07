@@ -145,7 +145,7 @@ nav a:hover::before {
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 10px;
+    width: 107%;
   }
   
   nav {
@@ -160,7 +160,8 @@ nav a:hover::before {
   }
 
   nav li {
-    margin: 1 20px;
+    margin: 0 10px;
     display: inline-block;
+    
   }
 }
